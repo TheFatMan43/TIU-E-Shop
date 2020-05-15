@@ -1,0 +1,585 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body,html {
+    background: url(BACKGROUND.jpeg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    display: block;
+    scroll-behavior: smooth;
+    height: calc(100% - 60px);
+}
+
+/* HEADER */
+
+.logo {
+    margin-left: 50px;
+    width: 70px;
+    height: 70px;
+}
+
+header {
+    width: 100%;
+    height: 70px;
+    background-color: black;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 1fr 8fr;
+}
+
+nav ul {
+    width: auto;
+    place-self: center right;
+    padding-right: 5%;
+}
+
+nav ul li {
+    display: inline-block;
+    padding-left: 15px;
+    position: relative;
+}
+
+nav ul li a {
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 70px;
+}
+
+nav ul li a:hover {
+    color: red;
+    transition: 0.3s;
+}
+
+.content {
+    background-color: white;
+    height: 1000px;
+    width: 1000px;
+}
+
+nav ul li ul {
+    width: 100%;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+}
+
+nav ul li:hover ul {
+    display: block;
+    color: white;
+}
+
+nav ul li ul li {
+    width: 90%;
+    font-family: 'Open Sans', sans-serif;
+    background-color: black;
+
+ }
+ 
+nav ul li ul li:hover {
+    background-color: red;
+    transition: 0.7s;
+}
+
+nav ul li ul li a {
+    color: white;
+    font-size: 18px;
+}
+
+nav ul li ul li a:hover {
+    color: white;
+    
+
+}
+
+
+
+
+
+/* BODY */
+
+
+
+
+
+main{
+    height: auto;
+    width: 60%;
+    background-color: white;
+    margin: 0 auto;
+    margin-bottom: 45px;
+}
+
+.zlava {
+    height: 250px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.mainlogo {
+    display: block;
+    height: auto;
+    width: 100%;
+    
+}
+
+.produkty {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    height: auto;
+    width: 100%;
+
+}
+.produkty p {
+    font-size: 20px;
+    margin-left: 120px;
+}
+
+.produkty > div {
+    place-self: center;
+}
+
+sup {
+    text-decoration: line-through;
+    color: black;
+}
+
+strong {
+    font-family: 'Rubik', sans-serif;
+    color: red;
+}
+
+h3 {
+    font-family: 'Rubik', sans-serif;
+    color: black;
+    margin-top: 0px;
+}
+
+.obrmenu {
+    margin-left: 15px;
+    margin-top: -3px;
+    height: 85px;
+    width: auto;
+    float: left;
+}
+
+.navpas ul li {
+    display: none;
+}
+
+.navpas ul li a {
+    display: none;
+}
+
+.obrmenu:hover + .navpas ul li a {
+    display: block;
+   
+}
+
+.Infotextblock > p {
+    text-align: justify;
+
+}
+
+
+/*kontakt*/
+
+
+
+.kontakt {
+    height: 100%;
+}
+
+
+
+/* FOOTER */
+
+
+
+footer {
+    position: fixed;
+    text-align: center;
+    bottom: 0px;
+    padding: 8px;
+    height: 30px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    
+}
+
+footer i {
+    color: white;
+    display: inline-block;
+    vertical-align: middle;
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    transition-duration: 0.3s;
+    transition-property: transform;
+    transition-timing-function: ease-out;
+  }
+  footer i:hover {
+    color: red;
+    transform: translateY(-2px);
+  }
+
+
+.tlacidlohore {
+    color: black;
+}
+
+
+
+/* HTML SUBOR INFO */
+
+
+.infomain {
+    height: 1000px;
+}
+
+h4 {
+    position: relative;
+    align-content: left;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    font-size: 30px;
+    font-family: 'Rubik', sans-serif;
+
+}
+
+
+.Infotextblock {
+    text-align: left;
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 25px;
+    font-size: 18px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.Infotextblock h3 {
+    font-size: 60px;
+
+}
+
+
+
+
+
+/* HTML SUBORY SHOP */
+
+
+
+
+
+.shop {
+    min-height: 100%;
+}
+
+.shop_img img{
+    width: 400px;
+    display: block;
+    margin: 0 auto;
+}
+
+.title_produkt{
+    text-align: center;
+    margin-top: 25px;
+    font-size: 45px;
+    font-family: 'Rubik', sans-serif;
+
+}
+
+.shop_kate{
+    font-family: 'Quicksand', sans-serif;
+    color: #777;
+    text-align: justify;
+    font-size: 20px;
+    padding-top: 50px;
+    width: 90%;
+    margin: 0 auto;
+    
+
+}
+
+.buytlacitko {
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0px 10px 14px -7px rgb(172, 0, 0);
+    background:linear-gradient(to bottom, rgb(172, 0, 0) 5%, rgb(172, 0, 0) 100%);
+    background-color:rgb(172, 0, 0);
+    border-radius:4px;
+    border:1px solid rgb(172, 0, 0);
+    cursor:pointer;
+    color:#ffffff;
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    font-size:20px;
+    font-weight:bold;
+    padding:12px 24px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px rgb(172, 0, 0);
+    margin-top: 100px;
+    width: 20%;
+}
+
+.buytlacitko:hover {
+    background:linear-gradient(to bottom, rgb(200, 0, 0) 5%, rgb(200, 0, 0) 100%);
+    background-color:rgb(200, 0, 0);
+}
+
+.buytlacitko:active {
+    position:relative;
+    top:1px;
+}
+
+#kosik {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "tovar nazov cena";
+}
+
+#kosik h3 {
+    grid-area: nazov;
+    place-self: center;
+
+}
+
+#kosik p {
+    grid-area: cena;
+    place-self: center;
+    font-family: 'Rubik', sans-serif;
+    color: black;
+    font-size: 20px;
+}
+
+.Kosik {
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0px 10px 14px -7px rgb(172, 0, 0);
+    background:linear-gradient(to bottom, rgb(172, 0, 0) 5%, rgb(172, 0, 0) 100%);
+    background-color:rgb(172, 0, 0);
+    border-radius:4px;
+    border:1px solid rgb(172, 0, 0);
+    cursor:pointer;
+    color:#ffffff;
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    font-size:20px;
+    font-weight:bold;
+    padding:12px 24px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px rgb(172, 0, 0);
+    margin-top: 10px;
+    width: 3%;
+}
+
+.Kosik {
+    background:linear-gradient(to bottom, rgb(200, 0, 0) 5%, rgb(200, 0, 0) 100%);
+    background-color:rgb(200, 0, 0);
+}
+
+.Kosik {
+    position:relative;
+    top:1px;
+}
+
+.velkost {
+    margin-left: 10px;
+    box-shadow: 0px 10px 14px -7px black;
+    background:linear-gradient(to bottom, red 5%, red 100%);
+    background-color:red;
+    border-radius:4px;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family: 'Rubik', sans-serif;
+    font-size:17px;
+    font-weight:bold;
+    padding:12px 24px;
+    text-decoration:none;
+    
+
+}
+
+.velkost:hover {
+    background:linear-gradient(to bottom, black 5%, black 100%);
+    background-color:black;
+}
+
+.velkost:active {
+    position:relative;
+    top:1px;
+}
+
+
+.Pvelkost {
+    margin-left: 10px;
+    box-shadow: 0px 10px 14px -7px black;
+    background:linear-gradient(to bottom, red 5%, red 100%);
+    background-color:red;
+    border-radius:4px;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family: 'Rubik', sans-serif;
+    font-size:15px;
+    font-weight:bold;
+    padding:12px 24px;
+    text-decoration:none;
+    
+
+}
+
+.Pvelkost:hover {
+    background:linear-gradient(to bottom, black 5%, black 100%);
+    background-color:black;
+}
+
+.Pvelkost:active {
+    position:relative;
+    top:1px;
+}
+
+.shop {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "Produkt Popis Popis";
+}
+#obrazok {
+    grid-area: Produkt;
+}
+
+#popis {
+    grid-area: Popis;
+}
+
+
+
+.shop_text{
+    margin-top: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size:15px;
+    font-family: 'Quicksand', sans-serif;
+    
+}
+
+h6{
+    margin-top: 150px;
+    margin-left: 50px;
+    font-size:25px;
+    color: rgb(172, 0, 0);
+    font-family: 'Rubik', sans-serif;
+
+}
+
+#mapa {
+    display: grid;
+}
+
+#mapa iframe {
+    place-self: center;
+    width: 50%;
+    height: 250px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .logo {
+        margin-left: 0px;
+        width: 70px;
+        height: 70px;
+    }
+    
+    
+    
+}
+
+@media only screen and (max-width: 1280px) {
+    .shop {
+        grid-template-areas: 
+        "Produkt Produkt Produkt"
+        "Popis Popis Popis ";
+    }
+
+    #obrazok {
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    #obrazok > div {
+        place-self: center;
+    }
+
+    .shop_img img{
+        padding-left: 0px;
+        width: 100%;
+        height: auto;
+    }
+
+}
+
+@media only screen and (max-width: 1300px){
+
+    .buytlacitko {
+        margin-top: 50px;
+        
+    }
+
+
+}
+
+@media only print {
+    header {
+        display: none;
+    }
+
+    #obrazok {
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .shop {
+        grid-template-areas: 
+        "Produkt Produkt Produkt"
+        "Popis Popis Popis ";
+    }
+
+    .shop_img img{
+        width: 50%;
+        height: 300px;
+    }
+
+    .title_produkt h5 {
+        font-size: 20px;
+    }
+
+    .shop_kate h2 {
+        font-size: 20px;
+    }
+
+    .shop_kate p {
+        font-size: 15px;
+    }
+
+    footer {
+        display: none;
+    }
+
+}
+
